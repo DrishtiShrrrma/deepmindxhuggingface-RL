@@ -3,13 +3,17 @@
 1. type of machine learning where an agent learns to make decisions by taking actions in an environment. The agent is rewarded or penalized (gets positive or negative reinforcement), based on the results of its actions. The aim is to maximize the cumulative reward over time.
 2. RL is about sequential decision making, aiming to choose a series of actions that maximizes some reward
 3. 
-4. 
+
+![image](https://github.com/DrishtiShrrrma/coherexhuggingface-RL/assets/129742046/b401dddb-605d-46b0-9fce-a503d5f95f58)
+
 
 # Reinforcement Learning Vs Supervised Learning
 
 1. In supervised learning, the output corresponding to each input during training while in reinforcement learning, no such output is provided.
 2. RL is about sequential decision making, aiming to choose a series of actions that maximizes some reward, while supervised learning is about mapping inputs to outputs.
 3. RL involves an environment, states, actions, and rewards, while supervised learning involves input data and corresponding labels.
+
+![image](https://media.licdn.com/dms/image/D4D12AQElNK01s9WngA/article-inline_image-shrink_400_744/0/1655204443710?e=1694649600&v=beta&t=9F64KGmsyQ2TdnhHyyYpc6QSs2zxhu-YCOPuqnJThc8)
 
 # Real-world Examples of RL
 

@@ -1,3 +1,3 @@
 # Reinforcement Learning
 
-1. hk
+1. 

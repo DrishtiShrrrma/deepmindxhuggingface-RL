@@ -20,6 +20,8 @@
 6. Reward: A signal received by the agent after each action, indicating how good or bad the action was.
 7. Policy: A strategy used by the agent to decide which action to take based on its current observation.
 
+Note: In a fully observable environment (as in Markov Decision Processes), the agent's observation equals the state. In partially observable environments (like Partially Observable Markov Decision Processes), the agent's observation may not fully capture the state.
+
 ![image](https://github.com/DrishtiShrrrma/deepmindxhuggingface-RL/assets/129742046/0fed8f16-29e2-4fdb-aa2c-2663aeb1ee0a)
 
 
@@ -182,11 +184,12 @@
 
 1. mathematical framework used for modeling decision making in situations where outcomes are partly random and partly under the control of a decision maker.
 2. simplifies the modeling of the decision process, making it more computationally feasible to solve problems in RL.
-3. **Real-world examples generally do not strictly follow either the Markov property or MDPs due to the complexity and randomness inherent in real-world situations. However, they are used as approximations to make problem-solving more tractable.**
-4. **The environment is assumed to be fully observable in MDPs because it simplifies the problem. If the agent can fully observe the state of the environment, it can determine the optimal action to take. This makes the problem more tractable and enables the use of standard MDP algorithms.**
-5. They are widely used in reinforcement learning to formally describe an environment for learning.
-6. MDPs are used in various fields, including economics, game theory, control theory, operations research, and artificial intelligence.
-7. They allow for the formal definition of policies and value functions in RL.
+3. **In a fully observable environment (as in Markov Decision Processes), the agent's observation equals the state.**
+4. **Real-world examples generally do not strictly follow either the Markov property or MDPs due to the complexity and randomness inherent in real-world situations. However, they are used as approximations to make problem-solving more tractable.**
+5. **The environment is assumed to be fully observable in MDPs because it simplifies the problem. If the agent can fully observe the state of the environment, it can determine the optimal action to take. This makes the problem more tractable and enables the use of standard MDP algorithms.**
+6. They are widely used in reinforcement learning to formally describe an environment for learning.
+7. MDPs are used in various fields, including economics, game theory, control theory, operations research, and artificial intelligence.
+8. They allow for the formal definition of policies and value functions in RL.
 
 # Markov Property Vs MDP
 
@@ -211,9 +214,10 @@
 
 1. POMDPs extend MDPs to handle partially observable environments.
 2. POMDPs can model a wide range of real-world problems where the state of the environment isn't fully observable.
-3. In POMDPs, the agent maintains a belief state, which is a probability distribution over the possible states of the environment, based on the history of observations, actions, and rewards.
-4. Solving POMDPs is computationally challenging, so approximate methods are often used.
-5. POMDPs can be applied in various areas such as robotics (where robots may have incomplete information about their environment), healthcare (where doctors may have incomplete information about a patient's health), and natural resource management (where managers may have incomplete information about the state of the environment).
+3.  **In partially observable environments (like Partially Observable Markov Decision Processes), the agent's observation may not fully capture the state.**
+4. In POMDPs, the agent maintains a belief state, which is a probability distribution over the possible states of the environment, based on the history of observations, actions, and rewards.
+5. Solving POMDPs is computationally challenging, so approximate methods are often used.
+6. POMDPs can be applied in various areas such as robotics (where robots may have incomplete information about their environment), healthcare (where doctors may have incomplete information about a patient's health), and natural resource management (where managers may have incomplete information about the state of the environment).
 
 # Reasons for having POMDPs when we have MDPs:
 

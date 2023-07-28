@@ -70,3 +70,32 @@
 2. When a large amount of data is available upfront.
 3. When there are computational or resource constraints.
 
+
+# Applications of Online RL
+
+1. High-frequency trading: Online RL can help make trading decisions in real-time based on the fluctuating market.
+2. Adaptive control systems in robotics: Robots can use online RL to adapt to changing environments.
+3. Personalized recommendations: Online RL can be used to adapt recommendations based on users' real-time behavior.
+
+# Real-world applications of offline RL:
+
+1. Customer behavior analysis: Offline RL can be used to analyze historical customer data to make future marketing strategies.
+2. Healthcare: Offline RL can be used to analyze past patient data to make treatment recommendations.
+3. Supply chain optimization: Using historical data, offline RL can optimize supply chain decisions.
+
+# Advantages and Disadvantages of Training Surgical Robots Online
+
+### Advantages:
+
+1. Online learning could allow the robot to adapt to individual patient characteristics in real-time.
+2. It could potentially lead to improved surgical outcomes by continuously improving performance.
+
+
+### Disadvantages:
+
+1. The risk of making errors that could potentially harm a patient is high.
+2. It would be ethically and legally challenging to implement, as it could be considered experimentation on patients.
+3. The high-stakes nature of surgery means that a high degree of certainty is required before actions are taken, which may not be possible with online learning.
+
+# Surgical Robots 
+4. 

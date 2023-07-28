@@ -10,6 +10,28 @@
 
 ![image](https://github.com/DrishtiShrrrma/coherexhuggingface-RL/assets/129742046/b401dddb-605d-46b0-9fce-a503d5f95f58)
 
+# RL Framework
+
+1. Agent: The entity that learns and makes decisions.
+2. Environment: The world in which the agent operates.
+3. State: A comprehensive representation of the condition of the environment. The state consists of all the necessary information needed to determine how the environment will respond to an action.
+4. Observation: The agent's perception of the state, based on its sensory capabilities. While the state represents the entire environment, the agent may not be able to fully observe it. The information that the agent can perceive is referred to as an observation.
+5. Action: A decision made by the agent that affects the state.
+6. Reward: A signal received by the agent after each action, indicating how good or bad the action was.
+7. Policy: A strategy used by the agent to decide which action to take based on its current observation.
+
+![image](https://github.com/DrishtiShrrrma/deepmindxhuggingface-RL/assets/129742046/0fed8f16-29e2-4fdb-aa2c-2663aeb1ee0a)
+
+
+# State
+
+1. the state of the environment represents all the information necessary to determine how the environment will respond to any given action. It is the condition of the environment rather than the agent.
+
+# State Vs Observation
+
+1. A state is a complete description of the condition of the environment. In an MDP, the state is assumed to be fully observable and it encapsulates all relevant information from the past.
+2. An observation, on the other hand, is the agent's perception of the state. In a partially observable environment, the observation may not contain all the information about the state.
+
 
 # Reinforcement Learning Vs Supervised Learning
 
@@ -68,15 +90,28 @@
 
 # Online learning is preferred in circumstances such as
 
-1. When the environment is dynamic and changes over time.
-2. When new data is constantly becoming available.
-3. When immediate adaptation to new data is required.
+1. When the environment is dynamic and unpredictable, requiring real-time adaptation.
+2. When the data is streaming and you can make decisions as the data arrives.
+3. When the agent is capable of interacting with the environment safely while learning.
+4. In interactive settings where the agent must react to user input.
+5. When the policy needs to continuously improve and adapt to new situations.
+6. When immediate adaptation to new data is required.
+
 
 # Offline learning is preferred in circumstances such as:
 
-1. When the environment is static or changes very slowly.
-2. When a large amount of data is available upfront.
-3. When there are computational or resource constraints.
+1. When there is a large pre-existing dataset from which the agent can learn.
+2. When learning in the actual environment is costly, dangerous, or unethical.
+3. When the environment is static or changes very slowly or doesn't change at all.
+4. In situations where online trial-and-error learning is not feasible or desirable.
+5. When you need to reduce the variance of the learning process by using batch updates.
+6. When a large amount of data is available upfront.
+7. When there are computational or resource constraints.
+8. 
+
+
+
+
 
 
 # Applications of Online RL
@@ -147,8 +182,41 @@
 
 1. mathematical framework used for modeling decision making in situations where outcomes are partly random and partly under the control of a decision maker.
 2. simplifies the modeling of the decision process, making it more computationally feasible to solve problems in RL.
+3. **Real-world examples generally do not strictly follow either the Markov property or MDPs due to the complexity and randomness inherent in real-world situations. However, they are used as approximations to make problem-solving more tractable.**
+4. **The environment is assumed to be fully observable in MDPs because it simplifies the problem. If the agent can fully observe the state of the environment, it can determine the optimal action to take. This makes the problem more tractable and enables the use of standard MDP algorithms.**
+5. They are widely used in reinforcement learning to formally describe an environment for learning.
+6. MDPs are used in various fields, including economics, game theory, control theory, operations research, and artificial intelligence.
+7. They allow for the formal definition of policies and value functions in RL.
 
 # Markov Property Vs MDP
 
 1. Markov property is a characteristic of a stochastic process where the future states depend only on the current state and not on the sequence of events that preceded it.
 2. An MDP is a model used for decision making that uses the Markov property. It includes not only the states and the transition probabilities between them but also the possible decisions (actions) and the rewards for each state-action pair.
+
+# Advantages of MDP
+
+1. They provide a formal mathematical framework for modeling decision-making in a variety of fields.
+2. They simplify complex decision-making problems by using the Markov property.
+
+# Disadvantages of MDPs:
+
+1. They assume the Markov property, which isn't always valid in real-world situations.
+2. They assume full observability of the environment, which is often not the case in reality.
+
+# Can we Use MDPs in Partially Observable Environments?
+
+1. j,
+
+# POMDPS
+
+1. POMDPs extend MDPs to handle partially observable environments.
+2. POMDPs can model a wide range of real-world problems where the state of the environment isn't fully observable.
+3. In POMDPs, the agent maintains a belief state, which is a probability distribution over the possible states of the environment, based on the history of observations, actions, and rewards.
+4. Solving POMDPs is computationally challenging, so approximate methods are often used.
+5. POMDPs can be applied in various areas such as robotics (where robots may have incomplete information about their environment), healthcare (where doctors may have incomplete information about a patient's health), and natural resource management (where managers may have incomplete information about the state of the environment).
+
+# Reasons for having POMDPs when we have MDPs:
+
+1. MDPs assume that the environment is fully observable, which is often not the case in real-world problems.
+2. POMDPs extend MDPs to handle partially observable environments, making them more versatile for real-world problems.
+3. POMDPs can handle uncertainty in both the state transitions and the observations, which is crucial in many situations.

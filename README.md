@@ -1,17 +1,25 @@
 # Reinforcement Learning
 
 1. type of machine learning where an agent learns to make decisions by taking actions in an environment. The agent is rewarded or penalized (gets positive or negative reinforcement), based on the results of its actions. The aim is to maximize the cumulative reward over time.
-2. RL is about sequential decision making, aiming to choose a series of actions that maximizes some reward
-3. 
+2. RL is about sequential decision-making because the decisions (actions) taken by an agent affect the future state of the environment and subsequent decisions. 
+3. RL is about sequential decision making, aiming to choose a series of actions that maximizes some reward
+4. the reward or penalty is given by the environment.
+5. The agent performs an action, and the environment responds with a new state and a reward (or penalty, if the reward is negative).
+6. The reward function is a part of the environment and it determines how much reward the agent gets for each action in each state.
+7. The aim is to maximize the cumulative reward - each action might have a short-term reward, but the agent is supposed to plan and execute actions that will result in the maximum cumulative reward over time.
 
 ![image](https://github.com/DrishtiShrrrma/coherexhuggingface-RL/assets/129742046/b401dddb-605d-46b0-9fce-a503d5f95f58)
 
 
 # Reinforcement Learning Vs Supervised Learning
 
-1. In supervised learning, the output corresponding to each input during training while in reinforcement learning, no such output is provided.
-2. RL is about sequential decision making, aiming to choose a series of actions that maximizes some reward, while supervised learning is about mapping inputs to outputs.
-3. RL involves an environment, states, actions, and rewards, while supervised learning involves input data and corresponding labels.
+1. In supervised learning, an algorithm learns from a training dataset that contains input-output pairs, whereas in RL, an agent learns from interacting with an environment and receiving rewards or penalties.
+2. Supervised learning requires labeled data, while RL does not require explicit labels.
+3. RL is about sequential decision making, aiming to choose a series of actions that maximizes some reward, while supervised learning is about mapping inputs to outputs.
+4. RL uses trial and error to learn optimal policies, whereas supervised learning uses existing labels to learn.
+5. RL involves an environment, states, actions, and rewards, while supervised learning involves input data and corresponding labels.
+6. **RL involves a reward system that guides learning, whereas supervised learning minimizes a loss function.**
+7. RL is usually more suitable for decision-making tasks, while supervised learning is more suitable for classification or regression tasks.
 
 ![image](https://media.licdn.com/dms/image/D4D12AQElNK01s9WngA/article-inline_image-shrink_400_744/0/1655204443710?e=1694649600&v=beta&t=9F64KGmsyQ2TdnhHyyYpc6QSs2zxhu-YCOPuqnJThc8)
 
@@ -97,5 +105,9 @@
 2. It would be ethically and legally challenging to implement, as it could be considered experimentation on patients.
 3. The high-stakes nature of surgery means that a high degree of certainty is required before actions are taken, which may not be possible with online learning.
 
-# Surgical Robots 
+# Reasons for using Offline RL for Surgical Robots
+
+1. Safety: In a surgical setting, there is no room for error. Online learning, which adapts in real-time, can make mistakes that could be disastrous.
+2. Ethics: It would be unethical to allow a surgical robot to learn and make mistakes on real patients.
+3. Data availability: There are plenty of recorded surgeries and simulations that could be used for offline learning.
 4. 

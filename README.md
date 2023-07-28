@@ -26,9 +26,10 @@
 
 # Online Vs Offline RL
 
-1. Online RL - agents learns via interacting w envio, Offline RL - agent learns w the help of pre-recorded dataset
-2. Online learning can continuously adapt to changes in the environment, while offline learning cannot.
-3. Online RL is preferred over offline when we have to deal w a dynamic environment
+**1. Alternative names of Online RL:** Interactive learning, Incremental learning, Continual learning, Real-time learning; **Alternative names of Offline RL:**  Batch learning, Static learning, Historical data learning.
+2. Online RL - agents learns via interacting w envio, Offline RL - agent learns w the help of pre-recorded dataset
+3. Online learning can continuously adapt to changes in the environment, while offline learning cannot.
+4. Online RL is preferred over offline when we have to deal w a dynamic environment
 
 
 ![image](https://github.com/DrishtiShrrrma/coherexhuggingface-RL/assets/129742046/4a2288ce-4262-4066-aebe-28f345c04297)

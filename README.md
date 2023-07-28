@@ -28,6 +28,7 @@
 
 1. Online RL - agents learns via interacting w envio, Offline RL - agent learns w the help of pre-recorded dataset
 2. Online learning can continuously adapt to changes in the environment, while offline learning cannot.
+3. Online RL is preferred over offline when we have to deal w a dynamic environment
 
 
 ![image](https://github.com/DrishtiShrrrma/coherexhuggingface-RL/assets/129742046/4a2288ce-4262-4066-aebe-28f345c04297)
@@ -54,5 +55,17 @@
 # Disadvanatages of Offline RL
 
 1. The model cannot adapt to changes in the environment.
-It requires a large amount of data upfront for training.
+2. It requires a large amount of data upfront for training.
+
+# Online learning is preferred in circumstances such as
+
+1. When the environment is dynamic and changes over time.
+2. When new data is constantly becoming available.
+3. When immediate adaptation to new data is required.
+
+# Offline learning is preferred in circumstances such as:
+
+1. When the environment is static or changes very slowly.
+2. When a large amount of data is available upfront.
+3. When there are computational or resource constraints.
 

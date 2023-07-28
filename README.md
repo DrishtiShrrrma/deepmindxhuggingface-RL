@@ -110,4 +110,45 @@
 1. Safety: In a surgical setting, there is no room for error. Online learning, which adapts in real-time, can make mistakes that could be disastrous.
 2. Ethics: It would be unethical to allow a surgical robot to learn and make mistakes on real patients.
 3. Data availability: There are plenty of recorded surgeries and simulations that could be used for offline learning.
-4. 
+
+#### Exceptions: Instances where online RL might be preferred over offline RL for surgical robots
+
+1. The robot needs to adapt to the unique physiology or conditions of each patient in real-time.
+2. The surgical environment is highly dynamic or unpredictable and the robot needs to respond to these changes in real-time.
+
+# RL in Self-Driving Cars
+
+1. RL can help a self-driving car to learn optimal driving strategies from raw sensory input.
+2. RL can also help the car adapt to changes in the environment, such as changing traffic conditions or new road layouts.
+3. Companies like Waymo and Tesla use forms of RL to train their autonomous vehicles.
+
+# Markov Property
+
+1. refers to the memoryless property of a stochastic process - the future states depend only on the current state and not on the sequence of events that preceded it.
+2. forms the basis for Markov Decision Processes (MDPs)
+3. **Real-world examples generally do not strictly follow the Markov property. Most of the time, future states depend not only on the present state but also on past states. However, the Markov property is still used as a simplifying assumption to make problem-solving more tractable.**
+
+# Assumptions of Markov Property
+
+1. The future state is conditionally independent of the past given the present.
+2. The transition probabilities (i.e., the probabilities of moving from one state to another) only depend on the current state and not the history of past states.
+
+# Advantages of Markov Property
+
+1. It simplifies the modeling process.
+2. It reduces the computation required in the decision-making process.
+
+# Disadvantages of Markov Property
+
+1. It assumes the system is memoryless, which is not always true in real-world situations.
+2. It might not be suitable for problems where the future state depends on the history of past states.
+
+# Markov Decision Process
+
+1. mathematical framework used for modeling decision making in situations where outcomes are partly random and partly under the control of a decision maker.
+2. simplifies the modeling of the decision process, making it more computationally feasible to solve problems in RL.
+
+# Markov Property Vs MDP
+
+1. Markov property is a characteristic of a stochastic process where the future states depend only on the current state and not on the sequence of events that preceded it.
+2. An MDP is a model used for decision making that uses the Markov property. It includes not only the states and the transition probabilities between them but also the possible decisions (actions) and the rewards for each state-action pair.

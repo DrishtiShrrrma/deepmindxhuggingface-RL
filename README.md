@@ -123,11 +123,6 @@ Note: In a fully observable environment (as in Markov Decision Processes), the a
 7. When there are computational or resource constraints.
 8. 
 
-
-
-
-
-
 # Applications of Online RL
 
 1. High-frequency trading: Online RL can help make trading decisions in real-time based on the fluctuating market.
@@ -229,7 +224,7 @@ Note: In a fully observable environment (as in Markov Decision Processes), the a
 3.  **In partially observable environments (like Partially Observable Markov Decision Processes), the agent's observation may not fully capture the state.**
 4.  POMDPs can handle uncertainty in both the state transitions and the observations, which is crucial in many situations. 
 5. POMDPs deal with these uncertainties by maintaining a belief over the state space and choosing actions based on this belief, which takes into account the possible states the environment could be in and the probabilities of these states given the history of actions and observations.
-6. Solving POMDPs is computationally challenging, so approximate methods are often used.
+6. computationally challenging due to the need to maintain a belief state (a probability distribution over the set of possible states) and to optimize over all possible policies. Therefore, approximate methods are often used to solve POMDPs. These methods can include value function approximation, Monte Carlo methods, or reinforcement learning algorithms that are adapted to handle the complexity of POMDPs.
 7. POMDPs can be applied in various areas such as robotics (where robots may have incomplete information about their environment), healthcare (where doctors may have incomplete information about a patient's health), and natural resource management (where managers may have incomplete information about the state of the environment).
 
 # Uncertainty in state transitions
@@ -245,6 +240,16 @@ Note: In a fully observable environment (as in Markov Decision Processes), the a
 1. MDPs assume that the environment is fully observable, which is often not the case in real-world problems.
 2. POMDPs extend MDPs to handle partially observable environments, making them more versatile for real-world problems.
 3. POMDPs can handle uncertainty in both the state transitions and the observations, which is crucial in many situations.
+
+# Factors That Make POMDPs Computationally Expensive
+
+1. The high dimensionality of the belief space, which is typically the same as the power set of the state space.
+2. The need to compute or estimate the future belief states for every possible action and observation pair.
+3. The need to optimize over all possible action sequences, which increases exponentially with the planning horizon.
+4. The uncertainty in the observations and state transitions, which requires considering all possible outcomes when planning.
+5. They need to maintain and update a belief state, which is a probability distribution over all possible states, instead of a single state.
+6. The decision-making process involves considering all possible observations that could be made in the future, which increases the complexity of the problem.
+7. Optimal solutions require considering long sequences of actions and observations, which leads to an exponential increase in computation as the planning horizon increases.
 
 # Examples of POMDPs in real-world applications could include:
 

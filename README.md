@@ -28,11 +28,15 @@ Note: In a fully observable environment (as in Markov Decision Processes), the a
 # State
 
 1. the state of the environment represents all the information necessary to determine how the environment will respond to any given action. It is the condition of the environment rather than the agent.
+2. The state of the environment includes all the necessary information to predict how the environment will react to any action taken by the agent.
+3. For instance, in a game of chess, the state includes the positions of all the pieces on the board. In a self-driving car, the state might include the positions of nearby cars, the speed of the vehicle, the condition of the road, the traffic signal status, and more.
 
 # State Vs Observation
 
 1. A state is a complete description of the condition of the environment. In an MDP, the state is assumed to be fully observable and it encapsulates all relevant information from the past.
-2. An observation, on the other hand, is the agent's perception of the state. In a partially observable environment, the observation may not contain all the information about the state.
+2. An observation, on the other hand, is the agent's perception of the state. It's what the agent sees, hears, or otherwise senses. So the observation is influenced by both the state of the environment and the agent's sensory capabilities. In a partially observable environment, the observation may not contain all the information about the state.
+3. Analogy 1: Uncertainty in observations is like watching a movie on a TV with a poor signal. Sometimes the picture might be clear and you can see all the details, while other times the picture might be fuzzy or distorted, making it hard to make out what's happening. The movie (state) is the same, but your observation of it can be different at different times due to the poor signal.
+4. Analogy 2: Uncertainty in state transitions can be compared to playing a video game where the same action doesn't always result in the same outcome. Imagine you're playing a soccer video game and you press a button to shoot the ball at the goal. Sometimes, you score, and other times, you don't. This is because there's uncertainty in the state transitions - the same action (pressing the shoot button) can lead to different outcomes (scoring a goal or not scoring a goal).
 
 
 # Reinforcement Learning Vs Supervised Learning
@@ -224,3 +228,25 @@ Note: In a fully observable environment (as in Markov Decision Processes), the a
 1. MDPs assume that the environment is fully observable, which is often not the case in real-world problems.
 2. POMDPs extend MDPs to handle partially observable environments, making them more versatile for real-world problems.
 3. POMDPs can handle uncertainty in both the state transitions and the observations, which is crucial in many situations.
+
+# Examples of POMDPs in real-world applications could include:
+
+1. Self-driving cars: The cars need to make decisions based on sensor readings, which might not provide complete or accurate information about the environment.
+2. Robot navigation: A robot navigating a building might not have complete information about its location or about the locations of obstacles.
+3. Medical diagnosis: Doctors have to make decisions based on symptoms and test results, which don't always provide a complete picture of a patient's health.
+4. Stock trading: Traders have to make decisions based on current and historical prices, but can't observe all factors influencing future prices.
+5. Wildlife conservation: Conservationists need to make decisions based on partial observations about population sizes, habitats, and the effects of interventions.
+
+# Self-driving Car : MDPs or POMDPs?
+
+1. can be modeled with both MDPs and POMDPs
+2. MDPs: If the state of the traffic and environment can be fully captured by sensors and no significant information is hidden, an MDP may be sufficient. It's computationally more efficient, simpler to implement, and can often provide good enough solutions.
+3. POMDPs: If there is significant uncertainty in perception (like sensor noise, occlusions, unpredictable behavior of other drivers and pedestrians), a POMDP can better model this uncertainty. It can provide a more robust policy by considering the probabilities of various unobservable factors.
+
+# When to Prefer MDPs over POMDPs
+
+While many real-world situations are partially observable and could be modeled as POMDPs, it's not always feasible or necessary to use this approach. Here are some reasons:
+
+1. Simplicity: MDPs are simpler than POMDPs and can often provide good enough solutions. Formulating a problem as an MDP is more straightforward and the algorithms for solving them are typically less complex and faster.
+2. Computationally efficient: Solving a POMDP is computationally expensive because it needs to consider many more possibilities (due to the uncertainty in observation). In contrast, MDPs only need to consider the current state of the environment, making them less computationally demanding.
+3. Sufficient observation: While many real-world problems are technically partially observable, there can often be enough observability in practical terms to treat the problem as fully observable and use an MDP.

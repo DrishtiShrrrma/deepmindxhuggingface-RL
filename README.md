@@ -250,3 +250,4 @@ While many real-world situations are partially observable and could be modeled a
 1. Simplicity: MDPs are simpler than POMDPs and can often provide good enough solutions. Formulating a problem as an MDP is more straightforward and the algorithms for solving them are typically less complex and faster.
 2. Computationally efficient: Solving a POMDP is computationally expensive because it needs to consider many more possibilities (due to the uncertainty in observation). In contrast, MDPs only need to consider the current state of the environment, making them less computationally demanding.
 3. Sufficient observation: While many real-world problems are technically partially observable, there can often be enough observability in practical terms to treat the problem as fully observable and use an MDP.
+

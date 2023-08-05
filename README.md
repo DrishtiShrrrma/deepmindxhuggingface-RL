@@ -20,7 +20,7 @@
 6. Reward: A signal received by the agent after each action, indicating how good or bad the action was.
 7. Policy: A strategy used by the agent to decide which action to take based on its current observation.
 
-Note: In a fully observable environment (as in Markov Decision Processes), the agent's observation equals the state. In partially observable environments (like Partially Observable Markov Decision Processes), the agent's observation may not fully capture the state.
+Note: In a fully observable environment (as in Markov Decision Processes), the agent's observation equals the state. In partially observable environments (like Partially Observable Markov Decision Processes POMDPS), the agent's observation may not fully capture the state.
 
 ![image](https://github.com/DrishtiShrrrma/deepmindxhuggingface-RL/assets/129742046/0fed8f16-29e2-4fdb-aa2c-2663aeb1ee0a)
 

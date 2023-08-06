@@ -23,8 +23,8 @@
 
 ### Crux
 
-1. In policy-based training, the optimal policy (denoted π*) is found by training the policy directly.
-2. In value-based training, finding an optimal value function (denoted Q* or V*) leads to having an optimal policy.
+1. In policy-based training, the optimal policy (π*) is found by training the policy directly.
+2. In value-based training, finding an optimal value function (Q* or V*) leads to having an optimal policy.
 
 # Stochastic Vs Deterministic Policy
 

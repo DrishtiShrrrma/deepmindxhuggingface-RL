@@ -114,7 +114,7 @@
 
 1. The environment must be a finite Markov decision process.
 2. A finite set of states and actions.
-3. Rewards are assumed to have bounded values - helps in maintaining numerical stability, avoiding extremely large Q-values that may lead to divergence.
+3. Rewards are assumed to have bounded values - help in maintaining numerical stability, avoiding extremely large Q-values that may lead to divergence - helps in convergence
 4. 
 
 # Advantages of Q-Learning:
@@ -125,7 +125,7 @@
 
 # Disadvantages of Q-Learning:
 
-1. It can be slow to converge in large state spaces.
+1. **It can be slow to converge in large state spaces.** - the algorithm has to update the Q-values for many state-action pairs. Convergence is slower because it requires more time and more samples to accurately estimate the values for all these combinations.
 2. Can suffer from the "curse of dimensionality."
 3. It requires careful tuning of hyperparameters.
 
@@ -141,3 +141,13 @@
 1. Controlling a self-driving car.
 2. Managing investment portfolios.
 3. Teaching a computer agent to play games like Pac-Man or Tic-Tac-Toe.
+
+# Discretization in Continuous State/Action Spaces
+
+1. continuous state or action spaces is converted to a finite set of discrete values
+2. It's like breaking up a continuous range into a set of bins or intervals, allowing the use of algorithms designed for discrete spaces.
+
+# Why is Discretization in Continuous State/Action Spaces Required in Q-Learning?
+
+1. Q-learning traditionally operates on a discrete state and action space, represented as a Q-table.
+2. Discretization helps in applying Q-learning to continuous domains by transforming them into a format that can be handled by the algorithm.

@@ -36,7 +36,8 @@
 3. instead of calculating each value as the sum of the expected return, which is a long process, we calculate the value as the sum of immediate reward + the discounted value of the state that follows.
 4. Can represent both deterministic and stochastic environments.
 5. can be applied to both continuous and discrete action spaces. In continuous action spaces, additional methods like function approximation may be needed.
-6. Basis for algorithms in planning and decision-making tasks.
+6. offers a recursive way to calculate the value of a state. Instead of calculating the expected return for each state from scratch, it considers the immediate reward plus the discounted value of the following state. 
+7. Basis for algorithms in planning and decision-making tasks.
 
 ![image](https://github.com/DrishtiShrrrma/deepmindxhuggingface-RL/assets/129742046/1a1b759f-0fa0-4a46-ae7b-1cdbe17c5ccb)
 
@@ -59,3 +60,21 @@
 1. Deterministic Environment: Chess - outcome of an action is entirely predictable.
 2. Stochastic Environment: Stock market trading -  outcome of buying or selling is not entirely predictable.
 
+# Monte Carlo Approach
+
+1. estimates value functions by averaging over many sample returns, based on actual experiences.
+2. value of states or state-action pairs without assuming complete knowledge of the environment.
+3. Powerful in model-free environments and can provide unbiased estimates.
+4. Doesn't require a model of the environment.
+5. Has high variance but unbiased estimates.
+
+# Temporal Difference Learning
+
+1. combination of Monte Carlo and Dynamic Programming methods. It updates value estimates based on the difference between consecutive estimates.
+2. Efficiently leverages partial information and is more computationally efficient than Monte Carlo.
+
+# Monte Carlo Vs Temporal Difference Learning:
+
+1. Monte Carlo: Waits until the end of an episode to update value estimates, has high variance.
+2. Temporal Difference Learning: Updates value estimates at each time step, reduces variance but introduces bias.
+1. combination of Monte Carlo ideas and Dynamic Programming methods. It updates value estimates based on the difference between consecutive estimates.

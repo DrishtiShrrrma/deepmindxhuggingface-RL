@@ -52,9 +52,6 @@
 1. Can be computationally expensive for large state spaces.
 2. Requires the system to have the Markov property, which might not hold in some real-world scenarios.
 
-
-
-
 # Determinisitic Vs Stochastic Envio
 
 1. Deterministic Environment: Chess - outcome of an action is entirely predictable.

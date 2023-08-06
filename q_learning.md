@@ -21,6 +21,10 @@
 
 ![image](https://github.com/DrishtiShrrrma/deepmindxhuggingface-RL/assets/129742046/ba662aa0-43e2-488e-8aac-c35152b69366)
 
+### Crux
+
+1. In policy-based training, the optimal policy (denoted π*) is found by training the policy directly.
+2. In value-based training, finding an optimal value function (denoted Q* or V*) leads to having an optimal policy.
 
 # Stochastic Vs Deterministic Policy
 

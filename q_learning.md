@@ -101,3 +101,43 @@
 
 1. Aj
 2. Analogy: In a college class, bias is like a professor who always grades a bit too harshly. Variance is like a professor who sometimes grades too easy and sometimes too hard. Need: a balance where the grades are fair (low bias) and consistent (low variance).
+
+# Q-learning
+
+1. a model-free reinforcement learning algorithm used to find the optimal action-selection policy for a given finite MDP by learning a value function.
+2. doesn't require a model of the environment.
+3. Q in Q-learning stands for "Quality." It represents the quality of a particular action in a given state.
+4. Q-table is a lookup table where the Q-values are stored for each state-action pair.
+5.  one of the first successful algorithms to learn directly from high-dimensional sensory inputs.
+
+# Assumptions related to Q-learning
+
+1. The environment must be a finite Markov decision process.
+2. A finite set of states and actions.
+3. Rewards are assumed to have bounded values - helps in maintaining numerical stability, avoiding extremely large Q-values that may lead to divergence.
+4. 
+
+# Advantages of Q-Learning:
+
+1. It is model-free.
+2. It can handle problems with stochastic transitions and rewards.
+3. It converges to the optimal policy given enough exploration.
+
+# Disadvantages of Q-Learning:
+
+1. It can be slow to converge in large state spaces.
+2. Can suffer from the "curse of dimensionality."
+3. It requires careful tuning of hyperparameters.
+
+# Limitations of Q-Learning:
+
+1. Requires discretization in continuous state/action spaces.
+2. Exploration vs exploitation must be balanced.
+3. Sensitive to initial parameter settings.
+4. 
+
+# Applications of Q-learning
+
+1. Controlling a self-driving car.
+2. Managing investment portfolios.
+3. Teaching a computer agent to play games like Pac-Man or Tic-Tac-Toe.

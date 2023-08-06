@@ -104,11 +104,16 @@
 
 # Q-learning
 
-1. a model-free reinforcement learning algorithm used to find the optimal action-selection policy for a given finite MDP by learning a value function.
-2. doesn't require a model of the environment.
-3. Q in Q-learning stands for "Quality." It represents the quality of a particular action in a given state.
-4. Q-table is a lookup table where the Q-values are stored for each state-action pair.
-5.  one of the first successful algorithms to learn directly from high-dimensional sensory inputs.
+1. a model-free RL algorithm (doesn't require a model of the environment) used to find the optimal action-selection policy for a given finite MDP by learning a value function.
+2. Trains a Q-function, an action-value function encoded, in internal memory, by a Q-table containing all the state-action pair values.
+3.  Given a state and action, Q-function searches its Q-table for the corresponding value.
+4.  in the beginning, Q-table is useless since it gives arbitrary values for each state-action pair (most of the time we initialize the Q-table to 0 values). But, as we explore the environment and update our Q-table it will give us a better and better approximation.
+5. Q in Q-learning stands for "Quality." It represents the quality of a particular action in a given state.
+6. Q-table is a lookup table where the Q-values are stored for each state-action pair.
+7.  one of the first successful algorithms to learn directly from high-dimensional sensory inputs.
+
+![image](https://github.com/DrishtiShrrrma/deepmindxhuggingface-RL/assets/129742046/7a0fc9cb-a2eb-45e6-9dee-3e44d6e4378a)
+
 
 # Assumptions related to Q-learning
 

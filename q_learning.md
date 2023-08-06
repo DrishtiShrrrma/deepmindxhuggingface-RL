@@ -75,6 +75,16 @@
 
 # Monte Carlo Vs Temporal Difference Learning:
 
-1. Monte Carlo: Waits until the end of an episode to update value estimates, has high variance.
+1. Monte Carlo: Waits until the end of an episode to update value estimates (val func) - has high variance.
 2. Temporal Difference Learning: Updates value estimates at each time step, reduces variance but introduces bias.
-1. combination of Monte Carlo ideas and Dynamic Programming methods. It updates value estimates based on the difference between consecutive estimates.
+3. With Monte Carlo, we update the value function from a complete episode, and so we use the actual accurate discounted return of this episode.
+
+With TD Learning, we update the value function from a step, and we replace 
+�
+�
+G 
+t
+​
+ , which we don’t know, with an estimated return called the TD target.
+
+![image](https://github.com/DrishtiShrrrma/deepmindxhuggingface-RL/assets/129742046/4f0ec64d-fb31-4ec4-b67a-216ddc3a1399)

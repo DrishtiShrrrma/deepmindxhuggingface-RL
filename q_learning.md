@@ -33,5 +33,6 @@
 
 1. by Richard Bellman
 2. it defines the value function of a policy as the sum of expected immediate rewards plus the expected values of the subsequent states.
-3. 
+3. Can represent both deterministic and stochastic environments.
+4. Basis for algorithms in planning and decision-making tasks.
 

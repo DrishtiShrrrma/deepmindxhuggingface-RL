@@ -64,11 +64,28 @@
 3. Powerful in model-free environments and can provide unbiased estimates.
 4. Doesn't require a model of the environment.
 5. Has high variance but unbiased estimates.
+6. simplicity in implementation
+
+# Disadvantages of Monte Carlo Approach
+
+1. High Variance
+2. Requires the completion of an episode to update values.
 
 # Temporal Difference Learning
 
 1. combination of Monte Carlo and Dynamic Programming methods. It updates value estimates based on the difference between consecutive estimates.
 2. Efficiently leverages partial information and is more computationally efficient than Monte Carlo.
+
+# Advantages of Temporal Difference Learning
+
+1. Lower variance.
+2. Can learn from incomplete sequences (online learning).
+3. Typically more computationally efficient.
+
+# Disadvantages of TD Learning
+
+1. Introduces bias into estimates.
+2. More complex in formulation compared to Monte Carlo.
 
 # Monte Carlo Vs Temporal Difference Learning:
 
@@ -77,3 +94,10 @@
 
 
 ![image](https://github.com/DrishtiShrrrma/deepmindxhuggingface-RL/assets/129742046/4f0ec64d-fb31-4ec4-b67a-216ddc3a1399)
+
+
+
+# Bias Vs Variance
+
+1. Aj
+2. Analogy: In a college class, bias is like a professor who always grades a bit too harshly. Variance is like a professor who sometimes grades too easy and sometimes too hard. Need: a balance where the grades are fair (low bias) and consistent (low variance).
